@@ -1,0 +1,27 @@
+body{
+    font-size:18px;
+    color:blue;
+}
+h1, h2{
+    font-family:arial
+}
+header{
+    font-size:68px;
+    font-family:arial;
+    text-align:center;
+    border:20px solid;
+    background-color:orange;
+    padding:40px;
+}
+nav a{
+    text-decoration:none;
+    border:1px solid;
+    border-radius:5px 5px 0 0;
+    margin-right:-5px;
+    padding:5px;
+}
+nav {
+    border-bottom:1px solid;
+    margin-top:10px;
+    padding-bottom:5px;
+}

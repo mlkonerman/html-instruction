@@ -1,0 +1,7 @@
+p{color:blue; border-style:solid; font-size:12pt}
+.makeItBlue{color:blue}
+div{
+    color:red;
+    background-color:yellow;
+    border-color:green;
+}

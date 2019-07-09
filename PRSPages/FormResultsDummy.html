@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Form Results</title>
+
+</head>
+<body>
+
+    <h1>formresultsdummy.html</h1>
+
+    <p>
+        Inspect the URL for this page and note the text after the question mark.
+        The question mark and the text that follow is a "query string" sent from a
+        form using method="GET".
+    </p>
+
+    ?firstName=Fred&lastName=Jones
+
+    <p>The first value in the query string starts with a "?" followed by a name and a value.</p>
+
+    ?firstName=Fred
+
+    <p>The second and all remaining values in the query string starts with an "&" followed by a name and a value.</p>
+
+    &lastName=Jones
+
+    <h1>Your Submitted Data</h1>
+
+    <div id="yourdata"></div>
+
+    <script>
+// get the div to display results -- BELOW IS JAVA SCRIPT
+var yourdataDIV = document.getElementById("yourdata");
+
+// get the URL for the current page
+var url = window.location.href;
+
+// pull off the query string (everything after the "?")
+var urlparts = url.split("?");
+if (urlparts.length == 0)
+{
+  yourdataDIV.innerHTML = "No query string found";
+}
+else
+{
+  // pull apart the name/value pairs
+  dataparts = urlparts[1].split("&")
+
+  // display them
+  for (var i=0; i<dataparts.length; i++)
+  {
+    yourdataDIV.innerHTML += dataparts[i] + "<br>";
+  }
+}
+    </script>
+
+
+    <br><br><br>
+
+    
+</body>
+</html>
